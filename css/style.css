@@ -1,0 +1,68 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 50px 190px 190px 120px 40px;
+    grid-template-areas: 
+    "navbar navbar navbar "
+    "sidebar-left main sidebar-right"
+    "sidebar-left content1 sidebar-right"
+    "sidebar-left content2 sidebar-right"
+    "footer footer footer"
+    ;
+}
+.navbar{
+    grid-area: navbar;
+    background: #0AE075;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    grid-area: main;
+    background: #0ac869;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content1{
+    grid-area: content1;
+    background: #088D4B;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content2{
+    grid-area: content2;
+    background: #077c41;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-left{
+    grid-area: sidebar-left;
+    background: #09AA59;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-right{
+    grid-area: sidebar-right;
+    background: #066E3A;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    grid-area: footer;
+    background: #044B28;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
